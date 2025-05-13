@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diplomatura Internacional</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #002c54;
+      color: white;
+    }
+    header, .intro {
+      text-align: center;
+      padding: 2rem;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+    button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #005fa3;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .project-list {
+      display: none;
+      margin: 1rem auto;
+      max-width: 800px;
+      background: #003b66;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .project-item {
+      margin: 0.5rem 0;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 2rem;
+    }
+    a.contact-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="color: white;">Diplomatura Internacional en Robótica + IA + Arduino con WebControl IA</h1>
+    <h2 style="color: white;">Catálogo de Proyectos</h2>
+    <h3 style="color: white; font-weight: normal;">
+      Para ingenieros, técnicos y educadores mayores de 50 años que quieren reinventarse con tecnología
+    </h3>
+  </header>
+
+  <div class="intro">
+    <h3 style="color: white;">¿Qué es WebControl IA?</h3>
+    <p>
+      WebControl IA es un método revolucionario creado por Prof. Ing. Víctor para controlar objetos reales
+      (luces, motores, sensores...) desde cualquier parte del mundo a través de páginas web inteligentes generadas con inteligencia artificial.
+    </p>
+    <p>
+      Aquí no se aprende a programar de forma tradicional. Se aprende a CREAR con la mente, usando el poder de la IA como un copiloto creativo.
+    </p>
+    <p>
+      Esta diplomatura no solo enseña tecnología, enseña una forma de reinventarse, generar ingresos y convertirse en un verdadero héroe digital.
+    </p>
+  </div>
+
+  <div class="buttons">
+    <button onclick="showProjects('basico')">Proyectos Básicos</button>
+    <button onclick="showProjects('intermedio')">Proyectos Intermedios</button>
+    <button onclick="showProjects('avanzado')">Proyectos Avanzados</button>
+    <button onclick="hideAll()">Cerrar Todo</button>
+  </div>
+
+  <div id="basico" class="project-list">
+    <h3 style="color: white;">Nivel Básico</h3>
+    <div class="project-item">1. Control de luces desde el celular</div>
+    <div class="project-item">2. Termómetro WebControl con alertas</div>
+    <div class="project-item">3. Timbre inteligente con notificación al WhatsApp</div>
+    <div class="project-item">4. Medidor de distancia IoT</div>
+    <div class="project-item">5. Sensor de movimiento con aviso web</div>
+    <div class="project-item">6. Mini estación meteorológica con IA</div>
+    <div class="project-item">7. Alarma sonora desde la web</div>
+    <div class="project-item">8. Botón de emergencia con geolocalización</div>
+    <div class="project-item">9. Riego automático controlado por celular</div>
+    <div class="project-item">10. Semáforo educativo interactivo</div>
+  </div>
+
+  <div id="intermedio" class="project-list">
+    <h3 style="color: white;">Nivel Intermedio</h3>
+    <div class="project-item">1. Huerta Inteligente 4.0</div>
+    <div class="project-item">2. Control de acceso con reconocimiento facial</div>
+    <div class="project-item">3. Medidor de calidad del aire para escuelas</div>
+    <div class="project-item">4. Dispensador de alcohol automático con contador web</div>
+    <div class="project-item">5. Seguimiento solar automático</div>
+    <div class="project-item">6. Estación de energía solar monitorizada</div>
+    <div class="project-item">7. Control de persianas por web</div>
+    <div class="project-item">8. Alerta de inundación en zonas rurales</div>
+    <div class="project-item">9. Sistema de monitoreo de pacientes en casa</div>
+    <div class="project-item">10. Gestión de consumo eléctrico inteligente</div>
+  </div>
+
+  <div id="avanzado" class="project-list">
+    <h3 style="color: white;">Nivel Avanzado</h3>
+    <div class="project-item">1. Robot autónomo con navegación web</div>
+    <div class="project-item">2. Mini súper inteligente con pedidos online</div>
+    <div class="project-item">3. Estación ambiental para pescadores artesanales</div>
+    <div class="project-item">4. Plataforma de control de drones por IA</div>
+    <div class="project-item">5. Sistema de seguridad 360 con IA</div>
+    <div class="project-item">6. Mapa en tiempo real de sensores de ciudad</div>
+    <div class="project-item">7. Control de robots educativos desde la nube</div>
+    <div class="project-item">8. Brazo robótico con comandos por voz e IA</div>
+    <div class="project-item">9. Invernadero autosustentable e inteligente</div>
+    <div class="project-item">10. Aula climática para escuelas rurales</div>
+  </div>
+
+  <footer>
+    <h4 style="color: white;">La Semilla On Line - Escuela de Robótica e IA</h4>
+    <a class="contact-button" href="https://api.whatsapp.com/send?phone=5491166416777&text=Solicito%20Contacto" target="_blank">
+      Solicitar contacto por WhatsApp
+    </a>
+  </footer>
+
+  <script>
+    function showProjects(level) {
+      hideAll();
+      document.getElementById(level).style.display = 'block';
+    }
+    function hideAll() {
+      document.getElementById('basico').style.display = 'none';
+      document.getElementById('intermedio').style.display = 'none';
+      document.getElementById('avanzado').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
